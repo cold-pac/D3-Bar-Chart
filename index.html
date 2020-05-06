@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                background: hsl(209, 79%, 34%);
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            #chartContainer {
+                background: white;
+            }
+            #title {
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 2vw;
+            }
+            .bar:hover {
+                fill: white;
+                cursor: crosshair;
+            }
+        </style>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src = "index.js"></script>
+    </head>
+    <body>
+        <div id = "chartContainer">
+            <div id = "title">United States GDP</div>
+            <div id = "chart"></div>
+        </div>
+    </body>
+</html>
+<script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
