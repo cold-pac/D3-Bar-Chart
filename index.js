@@ -9,6 +9,11 @@ fetch("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/maste
     const dataset = responseAsJSON.data;
     console.log(dataset);
 
+    let node = window.document.createElement("div");
+    node.id = "title";
+    node.innerHTML = "United States GDP";
+    window.document.getElementById("chartContainer").insertBefore(node, window.document.getElementById("chartContainer").firstChild);
+ 
     const w = 800; 
     const h = 500; 
     const padding = 50;
